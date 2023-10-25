@@ -31,7 +31,9 @@ public class ProxyInjector {
         Desktop desktop = Desktop.getDesktop();
         Class<? extends Desktop> desktopClass = desktop.getClass();
         Field peerField = desktopClass.getDeclaredField("peer");
-
+        
+        
+        
         peerField.setAccessible(true);
         Object peerObject = peerField.get(desktop);
         if (peerObject != null) {

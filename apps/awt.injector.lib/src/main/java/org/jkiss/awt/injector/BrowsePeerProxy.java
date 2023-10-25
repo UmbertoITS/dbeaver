@@ -30,7 +30,7 @@ class BrowsePeerProxy implements DesktopPeer {
     private final DesktopPeer peer;
     private final Function<URI, Boolean> browseFunction;
     private final Callable<Boolean> isBrowseSupportedCallable;
-
+    sysout
     BrowsePeerProxy(
         DesktopPeer peer,
         Callable<Boolean> isBrowseSupportedInteraction,
